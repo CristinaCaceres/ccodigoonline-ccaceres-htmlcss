@@ -17,8 +17,9 @@
     <header>
         <div class="header__barra"></div>
         <div class="header__barra2">
-            <picture>
+            <picture class="header__logo">
                 <source media="(max-width: 480px)" srcset="./imagen/logo5.png" />
+                <source media="(max-width: 1660px)" srcset="./imagen/logo6.png" />
                 <img class="header__logo-imagen" src="./imagen/logo3.png" />
             </picture>
             <p class="header__logo-texto">Fitness<span>GYM</span></p>
@@ -41,22 +42,44 @@
                     </li>
                 </ul>
             </nav>
+
+            <nav class="header__navegacion2">
+                <ul class="header__navegacion-lista2">
+                    <li class="header__navegacion-item2">
+                        <a href="./index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="header__navegacion-item2">
+                        <a href="#section1"><i class="far fa-address-card"></i></a>
+                    </li>
+                    <li class="header__navegacion-item2">
+                        <a href="#section2"><i class="fas fa-dumbbell"></i></a>
+                    </li>
+                    <li class="header__navegacion-item2">
+                        <a href="#section3"><i class="fas fa-money-check-alt"></i></a>
+                    </li>
+                    <li class="header__navegacion-item2">
+                        <a href="#section4"><i class="fas fa-search-location"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
     </header>
 
     <main class="main">
         <section id="section0">
-            <img class="section__imagen" src="./imagen/principal.jpg" />
-            <span class="section-icono"></span>
-            <span class="section-icono"></span>
-            <span class="section-icono"></span>
-
+            <img class="section__imagen" />
+            <!--  
+            <span class="section-icono1"></span>
+            <span class="section-icono2"></span>
+            <span class="section-icono3"></span>
+                -->
         </section>
         <section id="section1">
             <div class="section__barra"></div>
-            <h1>Fitness<span>GYM</span></h1>
-            <p>
+            <p class="titulo-section2">Fitness<span>GYM</span></p>
+            
+            <p class="titulo-section3"> 
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit laborum quia, in odit cupiditate
                 saepe ipsum atque eveniet eius nulla eos, corrupti reprehenderit ullam voluptatem. Deserunt, pariatur
                 et. Id, autem?
@@ -64,32 +87,40 @@
         </section>
         <section id="section2">
             <div class="section__barra"></div>
-            <h1 class="titulo-section">Nuestras Clases</h1>
+            <p class="titulo-section">Nuestras Clases</p>
         </section>
         <section id="section3">
             <div class="section__barra"></div>
-            <h1 class="titulo-section">Planes</h1>
+            <p class="titulo-section">Planes</p>
             <div class="planes-lista">
                 <ul class="lista-contenedor">
+                    <li class="lista-cabecera">
+                        <span class="item-nombre"></span>
+                        <span class="precio-anual">Anual</span>
+                        <span class="precio-semestral">Semestral</span>
+                        <span class="precio-mensual">Mensual</span>
+                        <div class="fix"></div>
+                    </li>
+
                     <li class="lista-item ">
                         <span class="item-nombre">PLAN BÁSICO</span>
-                        <span class="precio-mensual">S/ 50.00</span>
-                        <span class="precio-semestral">S/ 280.00</span>
                         <span class="precio-anual">S/ 530.00</span>
+                        <span class="precio-semestral">S/ 280.00</span>
+                        <span class="precio-mensual">S/ 50.00</span>
                         <div class="fix"></div>
                     </li>
                     <li class="lista-item ">
                         <span class="item-nombre">PLAN INTERMEDIO</span>
-                        <span class="precio-mensual">S/ 80.00</span>
-                        <span class="precio-semestral">S/ 430.00</span>
                         <span class="precio-anual">S/ 820.00</span>
+                        <span class="precio-semestral">S/ 430.00</span>
+                        <span class="precio-mensual">S/ 80.00</span>
                         <div class="fix"></div>
                     </li>
                     <li class="lista-item">
                         <span class="item-nombre">PLAN AVANZADO</span>
-                        <span class="precio-mensual">S/ 120.00</span>
-                        <span class="precio-semestral">S/ 680.00</span>
                         <span class="precio-anual">S/ 1'300.00</span>
+                        <span class="precio-semestral">S/ 680.00</span>
+                        <span class="precio-mensual">S/ 120.00</span>
                         <div class="fix"></div>
                     </li>
                 </ul>
@@ -97,7 +128,7 @@
         </section>
         <section id="section4">
             <div class="section__barra"></div>
-            <h1 class="titulo-section">Contacto</h1>
+            <p class="titulo-section">Contacto</p>
             <div class="list_contacto">
                 <div>
                     <i class="fas fa-map-marker-alt"></i>
